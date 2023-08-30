@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #001C30;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.container nav a img{
+    width: 75px;
+}
+
+section{
+    padding: 54px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111833;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav li a{
+    text-decoration: none;
+    color: #5cd45c;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0px 0px 50px 50px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav li a::after{
+    content: "";
+    background-color: #5cd45c;
+    height: 3px;
+    width: 0%;
+    display: block;
+}
+
+nav li a:hover::after{
+    width: 100%;
+    transition: 1s;
+    padding: 0px 0px;
+}
+
+.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img{
+    width: 100%;
+}
+
+.manual-nav{
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #151D3B;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #E1FFEC;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+.nav-auto div{
+    border: 2px solid #151D3B;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 460px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1{
+    background-color: #E1FFEC;
+}
+
+#radio2:checked ~ .nav-auto .auto-btn2{
+    background-color: #E1FFEC;
+}
+
+#radio3:checked ~ .nav-auto .auto-btn3{
+    background-color: #E1FFEC;
+}
+
+p{
+    color: #E1FFEC;
+    font-weight: 500;
+}
