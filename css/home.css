@@ -28,6 +28,8 @@ nav{
     justify-content: space-between;
     align-items: center;
     background-color: #111833;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 nav ul{
@@ -52,12 +54,12 @@ nav li a::after{
     height: 3px;
     width: 0%;
     display: block;
+    margin-left: 37px;
 }
 
 nav li a:hover::after{
-    width: 100%;
+    width: 78%;
     transition: 1s;
-    padding: 0px 0px;
 }
 
 .slider{
@@ -96,7 +98,7 @@ nav li a:hover::after{
 }
 
 .manual-btn{
-    border: 2px solid #151D3B;
+    border: 2px solid #E1FFEC;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -108,7 +110,7 @@ nav li a:hover::after{
 }
 
 .manual-btn:hover{
-    background-color: #E1FFEC;
+    background-color: #5cd45c;
 }
 
 #radio1:checked ~ .first{
@@ -124,7 +126,7 @@ nav li a:hover::after{
 }
 
 .nav-auto div{
-    border: 2px solid #151D3B;
+    border: 2px solid #E1FFEC;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -144,18 +146,32 @@ nav li a:hover::after{
 }
 
 #radio1:checked ~ .nav-auto .auto-btn1{
-    background-color: #E1FFEC;
+    background-color: #5cd45c;
 }
 
 #radio2:checked ~ .nav-auto .auto-btn2{
-    background-color: #E1FFEC;
+    background-color: #5cd45c;
 }
 
 #radio3:checked ~ .nav-auto .auto-btn3{
-    background-color: #E1FFEC;
+    background-color: #5cd45c;
 }
 
 p{
     color: #E1FFEC;
     font-weight: 500;
+}
+
+.jrecente{
+    color: #E1FFEC;
+    text-align: center;
+}
+
+.jogos img{
+    position: relative;
+    justify-content: space-between;
+    padding: 0px 25px;
+    align-items: center;
+    display: inline-block;
+    margin-left: 22px;
 }
